@@ -1,22 +1,30 @@
 # pfSense-LDAP-AuthN
-PfSense can use RADIUS and LDAP servers to authenticate users from remote sources. In this example, the firewall connects to an AD structure to authenticate a Security Group.
+PfSense can use RADIUS and LDAP servers to authenticate users from remote sources. In this example, the pfSense firewall connects to a Windows Domain Controller to authenticate an AD Security Group.
 
 <p align="center">
   <img src="https://github.com/HamllerM/pfSense-LDAP-AuthN/assets/62651116/48eaf441-a608-4453-a860-54b4e0099c97"/>
 </p> 
 
+
+| Virtual Machine | IP Address | Description |
+| --- | --- | --- |
+| WINPCLAB01 | 192.168.1.5 | Windows Client where pfSense is accessed from |
+| WINDCLAB01 | 192.168.2.5 | Windows Domain Controller |
+
+
 On Active Directory, we need a security group and at least two accounts. One account will be used as the service account attempting to bind to the server. Any other account will be a member of the security group that will be able to login on pfSense.
 
-Here are the accounts and group created for this lab:
+Here are the accounts and group already created in AD:
 
 | Security Group | Description |
 | --- | --- |
-| ITAdminSG | SG used to login on the pfSense web console |
+| ITAdminSG | SG to login on the pfSense web console |
 
 | Accounts | Description |
 | --- | --- |
 | ITUser | Account member of the ITAdminSG security group |
-| pfSense-SA | Service account used to establish connection to AD |
+| pfSense-SA | Service account to establish connection to AD |
+
 
 
 With the Active Directory module for Windows PowerShell we can use a group of cmdlets for domain management and managing users, groups, and objects:
