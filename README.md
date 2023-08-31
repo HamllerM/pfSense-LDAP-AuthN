@@ -27,7 +27,7 @@ Here are the accounts and group already created in AD:
 
 
 
-With the Active Directory module for Windows PowerShell we can use a group of cmdlets for domain management and managing users, groups, and objects:
+With the Active Directory module for Windows PowerShell we can use a group of cmdlets to manage domain, users, groups, and objects:
 
 <p align="center">
   <img src="https://github.com/HamllerM/pfSense-LDAP-AuthN/assets/62651116/0ab2258d-83cc-4a5a-8c69-4707333d055b"/>
@@ -86,7 +86,7 @@ pfSense
 
 Before moving forward, we can test these configurations by clicking "Select a container", a list of containers should appear, which means that the firewall crafted LDAP queries. Otherwise, we will get an error such as "Could not connect to the LDAP server. Please check the LDAP configuration."
 
-Additional an AD authentication test can be done:
+Additional an AD authentication test can be performed as follows:
 
 Diagnostics > Authentication > Provide the previously configured Authentication Server (AuthN-WINDCLAB01) and an AD user (ITUser) that is a member of the SG (ITAdminSG) configured in the Query:
 
