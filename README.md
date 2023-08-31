@@ -144,3 +144,4 @@ Finally, we are able to log in to the pfSense web console with the ITUser accoun
 </p>
 
 
+This example uses plain TCP, but if the Certificate Authority for the AD structure is imported under the Certificate Manager, the connection can also use SSL as well by selecting that option and choosing the appropriate CA from the Peer Certificate Authority drop down, and setting the Hostname to the match the server certificate.
