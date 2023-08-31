@@ -12,9 +12,9 @@ PfSense can use RADIUS and LDAP servers to authenticate users from remote source
 | WINDCLAB01 | 192.168.2.5 | Windows Domain Controller |
 
 
-On Active Directory, we need a security group and at least two accounts. One account will be used as the service account attempting to bind to the server. Any other account will be a member of the security group that will be able to login on pfSense.
+On Active Directory, we need a security group and at least two accounts. One account will be used as the service account attempting to bind to the server. Any other account will be a member of the security group that will be able to log in on pfSense.
 
-Here are the accounts and a group already created in AD:
+Below are the security group and the accounts that already exist in AD:
 
 | Security Group | Description |
 | --- | --- |
