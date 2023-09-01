@@ -1,5 +1,5 @@
 # pfSense-LDAP-AuthN
-PfSense can use RADIUS and LDAP servers to authenticate users from remote sources. In this example, the pfSense firewall connects to a Windows Domain Controller to authenticate an AD Security Group.
+PfSense can use LDAP servers to authenticate users from remote sources. In this example, the firewall connects to a Windows Domain Controller to authenticate an AD Security Group.
 
 <p align="center">
  <img src="https://github.com/HamllerM/pfSense-LDAP-AuthN/assets/62651116/3b8779ab-8351-48a6-b833-014c9a31372c"/>
