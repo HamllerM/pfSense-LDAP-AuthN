@@ -9,6 +9,7 @@ PfSense can use LDAP servers to authenticate users from remote sources. In this 
 | Virtual Machine | IP Address | Description |
 | --- | --- | --- |
 | WINPCLAB01 | 192.168.1.5 | Windows Client where pfSense is accessed from |
+| BSDPFSLAB01 | 192.168.1.1 | pfSense Firewall |
 | WINDCLAB01 | 192.168.2.5 | Windows Domain Controller |
 
 
